@@ -1,0 +1,16 @@
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\bin\Debug\net5.0\Gradebook.exe
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\bin\Debug\net5.0\Gradebook.deps.json
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\bin\Debug\net5.0\Gradebook.runtimeconfig.json
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\bin\Debug\net5.0\Gradebook.runtimeconfig.dev.json
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\bin\Debug\net5.0\Gradebook.dll
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\bin\Debug\net5.0\ref\Gradebook.dll
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\bin\Debug\net5.0\Gradebook.pdb
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\obj\Debug\net5.0\Gradebook.csprojAssemblyReference.cache
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\obj\Debug\net5.0\Gradebook.GeneratedMSBuildEditorConfig.editorconfig
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\obj\Debug\net5.0\Gradebook.AssemblyInfoInputs.cache
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\obj\Debug\net5.0\Gradebook.AssemblyInfo.cs
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\obj\Debug\net5.0\Gradebook.csproj.CoreCompileInputs.cache
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\obj\Debug\net5.0\Gradebook.dll
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\obj\Debug\net5.0\ref\Gradebook.dll
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\obj\Debug\net5.0\Gradebook.pdb
+D:\prgm\Study\cources\c-fundamentals-course\gradebook\src\Gradebook\obj\Debug\net5.0\Gradebook.genruntimeconfig.cache
