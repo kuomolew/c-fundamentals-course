@@ -6,6 +6,25 @@ namespace Gradebook.Tests
     public class TypeTests
     {
         [Fact]
+        public void IntegerTest()
+        {
+            var x = GetInt();
+            SetInt(ref x);
+
+            Assert.Equal(42, x);
+        }
+
+        private void SetInt(ref int z)
+        {
+            z = 42;
+        }
+
+        private int GetInt()
+        {
+            return 3;
+        }
+
+        [Fact]
         public void CanSetNameFromReferenceOrValue()
         {
             var book1 = GetBook("Book 1");
