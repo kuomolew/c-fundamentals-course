@@ -13,7 +13,7 @@ namespace Gradebook
             book.AddGrade(77.5);
             var stats = book.GetStatistics();
 
-            System.Console.WriteLine($"The average grade is {stats.Average:N1} \nThe highest is {stats.High} \nThe lowest is {stats.Low}");
+            System.Console.WriteLine($"The average grade is {stats.Average:N1} \nThe highest is {stats.High} \nThe lowest is {stats.Low} \nThe letter grade is {stats.Letter}");
 
         }
     }
