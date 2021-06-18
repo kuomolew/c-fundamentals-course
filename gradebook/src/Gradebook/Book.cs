@@ -12,8 +12,14 @@ namespace Gradebook
         }
         public void AddGrade(double grade)
         {
-
-            grades.Add(grade);
+            if (grade <= 100 && grade >= 0)
+            {
+                grades.Add(grade);
+            }
+            else
+            {
+                Console.WriteLine("Invalid value");
+            }
 
         }
         public Statistics GetStatistics()
@@ -24,12 +30,45 @@ namespace Gradebook
             result.Average = 0.0;
             result.High = double.MinValue;
             result.Low = double.MaxValue;
-            foreach (double grade in grades)
+
+            //foreach loop
+            // foreach (double grade in grades)
+            // {
+            //     result.High = Math.Max(grade, result.High);
+            //     result.Low = Math.Min(grade, result.Low);
+            //     result.Average += grade;
+            // }
+
+            // do while loop
+            // int index = 0;
+            // do
+            // {
+            //     result.High = Math.Max(grades[index], result.High);
+            //     result.Low = Math.Min(grades[index], result.Low);
+            //     result.Average += grades[index];
+            //     index++;
+            // }
+            // while (index < grades.Count);
+
+            // while loop
+            // int index = 0;
+            // while (index < grades.Count)
+            // {
+            //     result.High = Math.Max(grades[index], result.High);
+            //     result.Low = Math.Min(grades[index], result.Low);
+            //     result.Average += grades[index];
+            //     index++;
+            // }
+
+
+            // for loop
+            for (var index = 0; index < grades.Count; index++)
             {
-                result.High = Math.Max(grade, result.High);
-                result.Low = Math.Min(grade, result.Low);
-                result.Average += grade;
+                result.High = Math.Max(grades[index], result.High);
+                result.Low = Math.Min(grades[index], result.Low);
+                result.Average += grades[index];
             }
+
 
             result.Average /= grades.Count;
 
