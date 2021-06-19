@@ -77,10 +77,9 @@ namespace Gradebook.Tests
         {
             book.Name = name;
         }
-        public void CanBookSetName(ref Book book, string name)
+        void CanBookSetName(ref Book book, string name)
         {
             book = new Book(name);
-
         }
         [Fact]
         public void GetbookReturnsDifferentObjects()
