@@ -9,6 +9,8 @@ namespace Gradebook
         {
             var book = new Book("Vova");
             book.GradeAdded += OnGradeAdded;
+
+
             while (true)
             {
                 Console.WriteLine("Enter a grade or 'q' to quit");
