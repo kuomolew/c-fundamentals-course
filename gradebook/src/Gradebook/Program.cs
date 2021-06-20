@@ -7,10 +7,24 @@ namespace Gradebook
     {
         static void Main(string[] args)
         {
-            var book = new Book("Vova");
+            var book = new InMemoryBook("Vova");
             book.GradeAdded += OnGradeAdded;
 
+            EnterGrades(book); ;
 
+            var stats = book.GetStatistics();
+
+            Console.WriteLine($"Category {InMemoryBook.CATEGORY}");
+            Console.WriteLine($"For the book named {book.Name}");
+            Console.WriteLine($"The highest is {stats.High}");
+            Console.WriteLine($"The lowest is {stats.Low}");
+            Console.WriteLine($"The average grade is {stats.Average:N1}");
+            Console.WriteLine($"The letter grade is {stats.Letter}");
+
+        }
+
+        private static void EnterGrades(Book book)
+        {
             while (true)
             {
                 Console.WriteLine("Enter a grade or 'q' to quit");
@@ -18,7 +32,6 @@ namespace Gradebook
                 if (input == "q")
                 {
                     break;
-
                 }
                 try
                 {
@@ -39,17 +52,7 @@ namespace Gradebook
                 }
 
 
-            };
-
-            var stats = book.GetStatistics();
-
-            Console.WriteLine($"Category {Book.CATEGORY}");
-            Console.WriteLine($"For the book named {book.Name}");
-            Console.WriteLine($"The highest is {stats.High}");
-            Console.WriteLine($"The lowest is {stats.Low}");
-            Console.WriteLine($"The average grade is {stats.Average:N1}");
-            Console.WriteLine($"The letter grade is {stats.Letter}");
-
+            }
         }
 
         static void OnGradeAdded(object sender, EventArgs e)

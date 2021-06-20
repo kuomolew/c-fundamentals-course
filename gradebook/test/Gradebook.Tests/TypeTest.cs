@@ -73,13 +73,13 @@ namespace Gradebook.Tests
 
             Assert.Equal("Another Name", book1.Name);
         }
-        private void SetName(Book book, string name)
+        private void SetName(InMemoryBook book, string name)
         {
             book.Name = name;
         }
-        void CanBookSetName(ref Book book, string name)
+        void CanBookSetName(ref InMemoryBook book, string name)
         {
-            book = new Book(name);
+            book = new InMemoryBook(name);
         }
         [Fact]
         public void GetbookReturnsDifferentObjects()
@@ -115,9 +115,9 @@ namespace Gradebook.Tests
 
         }
 
-        Book GetBook(string name)
+        InMemoryBook GetBook(string name)
         {
-            return new Book(name);
+            return new InMemoryBook(name);
         }
     }
 }
