@@ -19,6 +19,13 @@ namespace Gradebook
         }
     }
 
+    public interface IBook
+    {
+        void AddGrade(double grade);
+        Statistics GetStatistics();
+        string Name { get; }
+        event GradeAddedDelegate GradeAdded;
+    }
     public abstract class Book : NamedObject
     {
         public Book(string name) : base(name)
@@ -27,7 +34,7 @@ namespace Gradebook
 
         public abstract void AddGrade(double grade);
     }
-    public class InMemoryBook : Book
+    public class InMemoryBook : Book, IBook
     {
         public InMemoryBook(string name) : base(name)
         {
